@@ -11,6 +11,7 @@ import type { WritableAtom } from 'jotai';
 
 import { BITFINEX_WS_URL } from '@/lib/constants';
 import { fromSymbol } from '@/lib/currency-pair';
+import { performanceTracker } from '@/lib/performance-tracker';
 
 import { Connection } from './connection';
 import { MessageBuffer } from './message-buffer';
@@ -131,16 +132,24 @@ export class WebSocketManager {
 
       case 'trades-snapshot':
       case 'candles-snapshot':
-      case 'book-snapshot':
+      case 'book-snapshot': {
         this.subscriptionManager.markDataReceived(message.chanId);
+        const start = performance.now();
         this.handleSnapshot(message);
+        performanceTracker.trackLatency(
+          message.type,
+          performance.now() - start
+        );
+        performanceTracker.trackMessage(message.type);
         return;
+      }
 
       case 'ticker-update':
       case 'trade-update':
       case 'candle-update':
       case 'book-update':
         this.subscriptionManager.markDataReceived(message.chanId);
+        performanceTracker.trackMessage(message.type);
         this.buffer.add(message);
         return;
     }
@@ -231,9 +240,12 @@ export class WebSocketManager {
   }
 
   private handleBufferedMessages(messages: BitfinexMessage[]): void {
+    const start = performance.now();
     messages.forEach((message) => {
       this.handleUpdate(message);
     });
+    const latency = performance.now() - start;
+    performanceTracker.trackLatency('buffer-flush', latency);
   }
 
   private handleUpdate(message: BitfinexMessage): void {

@@ -20,6 +20,7 @@ import CandlesChart from './candles-chart';
 import DepthChart from './depth-chart';
 import Header from './header';
 import MarketTable from './market-table';
+import PerformanceDashboard from './performance-dashboard';
 import TickerStrip from './ticker-strip';
 import TradesTable from './trades-table';
 
@@ -132,6 +133,8 @@ export default function Dashboard() {
           </Widget>
         </div>
       </div>
+
+      <PerformanceDashboard />
     </div>
   );
 }
