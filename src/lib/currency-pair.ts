@@ -1,8 +1,6 @@
 const BASE_CURRENCY_LENGTH = 3;
 
-export function parseCurrencyPair(
-  pair: string
-): [base: string, quote: string] {
+export function parseCurrencyPair(pair: string): [base: string, quote: string] {
   const base = pair.slice(0, BASE_CURRENCY_LENGTH);
   const quote = pair.slice(BASE_CURRENCY_LENGTH);
   return [base, quote];
