@@ -106,10 +106,7 @@ export class SubscriptionManager {
       this.onStaleChangeCallback?.(chanId, false);
       this.onChangeCallback?.(this.subscriptions);
     } else {
-      this.subscriptions.set(chanId, {
-        ...meta,
-        lastUpdate: Date.now(),
-      });
+      meta.lastUpdate = Date.now();
     }
   }
 
