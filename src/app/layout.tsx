@@ -1,22 +1,25 @@
-import type { Metadata } from "next"
-import { Geist_Mono } from "next/font/google"
-import Providers from "./providers"
-import "./globals.css"
+import type { Metadata } from 'next';
+
+import { Geist_Mono } from 'next/font/google';
+
+import Providers from './providers';
+
+import './globals.css';
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
-  title: "Crypto Trader",
-  description: "Real-time cryptocurrency trading dashboard",
-}
+  title: 'Crypto Trader',
+  description: 'Real-time cryptocurrency trading dashboard',
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" className="dark">
@@ -24,5 +27,5 @@ export default function RootLayout({
         <Providers>{children}</Providers>
       </body>
     </html>
-  )
+  );
 }

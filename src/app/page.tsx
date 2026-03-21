@@ -4,5 +4,5 @@ export default function Home() {
       <h1 className="text-2xl font-bold">Crypto Trader</h1>
       <p className="text-muted mt-2">Dashboard loading...</p>
     </main>
-  )
+  );
 }

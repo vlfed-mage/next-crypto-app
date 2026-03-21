@@ -1,8 +1,9 @@
-"use client"
+'use client';
 
-import { type ReactNode } from "react"
-import { Provider as JotaiProvider } from "jotai"
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { type ReactNode } from 'react';
+
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { Provider as JotaiProvider } from 'jotai';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -11,10 +12,10 @@ const queryClient = new QueryClient({
       retry: 2,
     },
   },
-})
+});
 
 interface ProvidersProps {
-  readonly children: ReactNode
+  readonly children: ReactNode;
 }
 
 export default function Providers({ children }: ProvidersProps) {
@@ -22,5 +23,5 @@ export default function Providers({ children }: ProvidersProps) {
     <QueryClientProvider client={queryClient}>
       <JotaiProvider>{children}</JotaiProvider>
     </QueryClientProvider>
-  )
+  );
 }
