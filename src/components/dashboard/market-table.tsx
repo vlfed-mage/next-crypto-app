@@ -2,6 +2,9 @@
 
 import { memo, useCallback } from 'react';
 
+import { useAtomValue } from 'jotai';
+
+import { selectedPairAtom } from '@/atoms/selection';
 import { useMarketData } from '@/hooks/use-market-data';
 import { useSelectPair } from '@/hooks/use-select-pair';
 import { useSparklinePrices } from '@/hooks/use-sparkline-prices';
@@ -23,6 +26,8 @@ const MarketRow = memo(function MarketRow({
 }: MarketRowProps) {
   const { ticker } = useTickerData(currencyPair);
   const prices = useSparklinePrices(currencyPair);
+  const selectedPair = useAtomValue(selectedPairAtom);
+  const isActive = selectedPair === currencyPair;
 
   const handleClick = useCallback(() => {
     onSelect(currencyPair);
@@ -38,7 +43,7 @@ const MarketRow = memo(function MarketRow({
   return (
     <tr
       onClick={handleClick}
-      className="cursor-pointer border-b border-border/50 transition-colors hover:bg-white/5"
+      className={`border-b border-border/50 transition-colors hover:bg-white/5 ${isActive ? 'bg-white/5' : 'cursor-pointer '}`}
     >
       <td className="px-4 py-2 text-xs font-medium text-white">
         {formatCurrencyPair(currencyPair)}

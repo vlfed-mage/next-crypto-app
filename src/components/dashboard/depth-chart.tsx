@@ -6,12 +6,12 @@ import {
   Area,
   CartesianGrid,
   ComposedChart,
-  ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
 } from 'recharts';
 
+import { useContainerSize } from '@/hooks/use-container-size';
 import { useDepthData } from '@/hooks/use-depth-data';
 import { formatPrice } from '@/lib/formatters';
 
@@ -24,6 +24,7 @@ const GRID_COLOR = '#1e293b';
 
 export default memo(function DepthChart() {
   const { depth, isStale } = useDepthData();
+  const [containerRef, containerSize] = useContainerSize();
 
   const chartData = useMemo(() => {
     const bidData = [...depth.bids].reverse().map((point) => ({
@@ -44,59 +45,63 @@ export default memo(function DepthChart() {
   const isEmpty = depth.bids.length === 0 && depth.asks.length === 0;
 
   return (
-    <div className="relative h-full">
+    <div ref={containerRef} className="relative h-full">
       {isStale && <StaleIndicator />}
       {isEmpty && <Loading />}
-      {!isEmpty && (
-        <ResponsiveContainer width="100%" height="100%">
-          <ComposedChart data={chartData}>
-            <CartesianGrid
-              strokeDasharray="3 3"
-              stroke={GRID_COLOR}
-              vertical={false}
-            />
-            <XAxis
-              dataKey="price"
-              stroke="#475569"
-              tick={{ fill: '#475569', fontSize: 10 }}
-              tickMargin={8}
-              minTickGap={50}
-              tickFormatter={(v: string) => `$${formatPrice(Number(v))}`}
-            />
-            <YAxis
-              stroke="#475569"
-              tick={{ fill: '#475569', fontSize: 10 }}
-              width={50}
-            />
-            <Tooltip
-              contentStyle={{
-                backgroundColor: '#0f172a',
-                border: '1px solid #1e293b',
-                borderRadius: '8px',
-                fontSize: '11px',
-              }}
-              labelStyle={{ color: '#94a3b8' }}
-            />
-            <Area
-              type="stepAfter"
-              dataKey="bidDepth"
-              stroke={BID_COLOR}
-              fill={BID_COLOR}
-              fillOpacity={0.2}
-              name="Bids"
-              connectNulls={false}
-            />
-            <Area
-              type="stepAfter"
-              dataKey="askDepth"
-              stroke={ASK_COLOR}
-              fill={ASK_COLOR}
-              fillOpacity={0.2}
-              name="Asks"
-              connectNulls={false}
-            />
-          </ComposedChart>
-        </ResponsiveContainer>
+      {!isEmpty && containerSize.width > 0 && containerSize.height > 0 && (
+        <ComposedChart
+          width={containerSize.width}
+          height={containerSize.height}
+          data={chartData}
+        >
+          <CartesianGrid
+            strokeDasharray="3 3"
+            stroke={GRID_COLOR}
+            vertical={false}
+          />
+          <XAxis
+            dataKey="price"
+            stroke="#475569"
+            tick={{ fill: '#475569', fontSize: 10 }}
+            tickMargin={8}
+            minTickGap={50}
+            tickFormatter={(v: string) => `$${formatPrice(Number(v))}`}
+          />
+          <YAxis
+            stroke="#475569"
+            tick={{ fill: '#475569', fontSize: 10 }}
+            width={50}
+          />
+          <Tooltip
+            contentStyle={{
+              backgroundColor: '#0f172a',
+              border: '1px solid #1e293b',
+              borderRadius: '8px',
+              fontSize: '11px',
+              color: '#ffffff',
+            }}
+            labelStyle={{ color: '#ffffff' }}
+            itemStyle={{ color: '#ffffff' }}
+          />
+          <Area
+            type="stepAfter"
+            dataKey="bidDepth"
+            stroke={BID_COLOR}
+            fill={BID_COLOR}
+            fillOpacity={0.2}
+            name="Bids"
+            connectNulls={false}
+          />
+          <Area
+            type="stepAfter"
+            dataKey="askDepth"
+            stroke={ASK_COLOR}
+            fill={ASK_COLOR}
+            fillOpacity={0.2}
+            name="Asks"
+            connectNulls={false}
+          />
+        </ComposedChart>
       )}
     </div>
   );

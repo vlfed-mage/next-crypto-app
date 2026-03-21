@@ -2,15 +2,17 @@ import { useCallback } from 'react';
 
 import { useAtomValue, useSetAtom } from 'jotai';
 
+import { selectedTimeframeAtom } from '@/atoms/candles';
 import { selectedPairAtom } from '@/atoms/selection';
 import { websocketManagerAtom } from '@/atoms/websocket';
-import { SUBSCRIPTION_DELAY_MS } from '@/lib/constants';
+import { DEFAULT_TIMEFRAME, SUBSCRIPTION_DELAY_MS } from '@/lib/constants';
 import { toSymbol } from '@/lib/currency-pair';
 import { ChannelType } from '@/types/channel';
 
 export function useSelectPair() {
   const setSelectedPair = useSetAtom(selectedPairAtom);
   const manager = useAtomValue(websocketManagerAtom);
+  const timeframe = useAtomValue(selectedTimeframeAtom);
 
   const selectPair = useCallback(
     (currencyPair: string) => {
@@ -39,9 +41,17 @@ export function useSelectPair() {
           symbol: currentSymbol,
           prec: 'R0',
         });
+
+        if (timeframe !== DEFAULT_TIMEFRAME) {
+          subscriptionManager.subscribe({
+            event: 'subscribe',
+            channel: ChannelType.CANDLES,
+            key: `trade:${timeframe}:${currentSymbol}`,
+          });
+        }
       }, SUBSCRIPTION_DELAY_MS);
     },
-    [manager, setSelectedPair]
+    [manager, setSelectedPair, timeframe]
   );
 
   return selectPair;

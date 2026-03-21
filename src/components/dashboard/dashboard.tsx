@@ -100,7 +100,7 @@ export default function Dashboard() {
       <TickerStrip />
 
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <div className="lg:col-span-2 h-[404px]">
+        <div className="h-[404px]">
           <Widget title="Market">
             <MarketTable />
           </Widget>
@@ -111,26 +111,26 @@ export default function Dashboard() {
             <TradesTable />
           </Widget>
         </div>
-      </div>
 
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <div className="h-[400px] lg:col-span-2">
-          <Widget title="Candles">
-            <CandlesChart />
-          </Widget>
-        </div>
-
-        <div className="h-[400px]">
+        <div className="h-[404px]">
           <Widget title="Order Book">
             <BookTable />
           </Widget>
         </div>
       </div>
 
-      <div className="h-[300px]">
-        <Widget title="Depth">
-          <DepthChart />
-        </Widget>
+      <div className="grid h-[400px] grid-cols-1 gap-4 lg:grid-cols-3">
+        <div className="lg:col-span-2">
+          <Widget title="Chart">
+            <CandlesChart />
+          </Widget>
+        </div>
+
+        <div>
+          <Widget title="Depth">
+            <DepthChart />
+          </Widget>
+        </div>
       </div>
     </div>
   );

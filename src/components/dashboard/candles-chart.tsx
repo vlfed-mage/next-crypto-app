@@ -1,18 +1,21 @@
 'use client';
 
+import type { Timeframe } from '@/lib/constants';
+
 import { memo, useMemo } from 'react';
 
 import {
   Bar,
   CartesianGrid,
   ComposedChart,
-  ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
 } from 'recharts';
 
 import { useCandlesData } from '@/hooks/use-candles-data';
+import { useContainerSize } from '@/hooks/use-container-size';
+import { TIMEFRAME_LABELS, TIMEFRAMES } from '@/lib/constants';
 import { formatCurrencyPair } from '@/lib/currency-pair';
 import { formatPrice, formatTime } from '@/lib/formatters';
 
@@ -25,7 +28,9 @@ const VOLUME_COLOR = '#334155';
 const GRID_COLOR = '#1e293b';
 
 export default memo(function CandlesChart() {
-  const { candles, currencyPair, isStale } = useCandlesData();
+  const { candles, currencyPair, timeframe, isStale, changeTimeframe } =
+    useCandlesData();
+  const [containerRef, containerSize] = useContainerSize();
 
   const chartData = useMemo(() => {
     return candles.slice(-60).map((candle) => {
@@ -49,12 +54,47 @@ export default memo(function CandlesChart() {
       {chartData.length === 0 && <Loading />}
       {chartData.length > 0 && (
         <div className="flex h-full flex-col">
-          <div className="px-4 py-2 text-xs text-muted">
-            {currencyPair ? formatCurrencyPair(currencyPair) : ''} — 1m
+          <div className="flex items-center justify-between px-4 py-2">
+            <div className="flex items-center gap-3">
+              <span className="text-xs text-muted">
+                {currencyPair ? formatCurrencyPair(currencyPair) : ''}
+              </span>
+              {chartData.length > 0 &&
+                (() => {
+                  const lastCandle = chartData[chartData.length - 1]!;
+                  const isUp = lastCandle.close >= lastCandle.open;
+                  return (
+                    <span
+                      className={`font-mono text-sm font-bold ${isUp ? 'text-bid' : 'text-ask'}`}
+                    >
+                      ${formatPrice(lastCandle.close)}
+                    </span>
+                  );
+                })()}
+            </div>
+            <div className="flex gap-1">
+              {TIMEFRAMES.map((tf) => (
+                <button
+                  key={tf}
+                  onClick={() => changeTimeframe(tf as Timeframe)}
+                  className={`rounded px-2 py-0.5 text-xs font-medium transition-colors ${
+                    tf === timeframe
+                      ? 'bg-blue-500/20 text-blue-400'
+                      : 'text-muted hover:text-foreground'
+                  }`}
+                >
+                  {TIMEFRAME_LABELS[tf]}
+                </button>
+              ))}
+            </div>
           </div>
-          <div className="flex-1">
-            <ResponsiveContainer width="100%" height="100%">
-              <ComposedChart data={chartData}>
+          <div ref={containerRef} className="min-h-0 flex-1">
+            {containerSize.width > 0 && containerSize.height > 0 && (
+              <ComposedChart
+                width={containerSize.width}
+                height={containerSize.height}
+                data={chartData}
+              >
                 <CartesianGrid
                   strokeDasharray="3 3"
                   stroke={GRID_COLOR}
@@ -178,7 +218,7 @@ export default memo(function CandlesChart() {
                   }}
                 />
               </ComposedChart>
-            </ResponsiveContainer>
+            )}
           </div>
         </div>
       )}

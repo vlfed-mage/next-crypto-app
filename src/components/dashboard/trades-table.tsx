@@ -34,7 +34,7 @@ export default function TradesTable() {
   const { trades, isStale } = useTradesData();
 
   return (
-    <div className="relative">
+    <div className="relative h-full">
       {isStale && <StaleIndicator />}
       {trades.length === 0 && <Loading />}
       <table className="w-full text-left">
