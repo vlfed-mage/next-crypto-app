@@ -5,7 +5,7 @@ import { useAtomValue, useSetAtom } from 'jotai';
 import { selectedTimeframeAtom } from '@/atoms/candles';
 import { selectedPairAtom } from '@/atoms/selection';
 import { websocketManagerAtom } from '@/atoms/websocket';
-import { DEFAULT_TIMEFRAME, SUBSCRIPTION_DELAY_MS } from '@/lib/constants';
+import { DEFAULT_TIMEFRAME } from '@/lib/constants';
 import { toSymbol } from '@/lib/currency-pair';
 import { ChannelType } from '@/types/channel';
 
@@ -28,28 +28,26 @@ export function useSelectPair() {
 
       setSelectedPair(currencyPair);
 
-      setTimeout(() => {
+      subscriptionManager.subscribe({
+        event: 'subscribe',
+        channel: ChannelType.TRADES,
+        symbol: currentSymbol,
+      });
+
+      subscriptionManager.subscribe({
+        event: 'subscribe',
+        channel: ChannelType.BOOK,
+        symbol: currentSymbol,
+        prec: 'R0',
+      });
+
+      if (timeframe !== DEFAULT_TIMEFRAME) {
         subscriptionManager.subscribe({
           event: 'subscribe',
-          channel: ChannelType.TRADES,
-          symbol: currentSymbol,
+          channel: ChannelType.CANDLES,
+          key: `trade:${timeframe}:${currentSymbol}`,
         });
-
-        subscriptionManager.subscribe({
-          event: 'subscribe',
-          channel: ChannelType.BOOK,
-          symbol: currentSymbol,
-          prec: 'R0',
-        });
-
-        if (timeframe !== DEFAULT_TIMEFRAME) {
-          subscriptionManager.subscribe({
-            event: 'subscribe',
-            channel: ChannelType.CANDLES,
-            key: `trade:${timeframe}:${currentSymbol}`,
-          });
-        }
-      }, SUBSCRIPTION_DELAY_MS);
+      }
     },
     [manager, setSelectedPair, timeframe]
   );

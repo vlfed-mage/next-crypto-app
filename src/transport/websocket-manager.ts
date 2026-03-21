@@ -241,179 +241,187 @@ export class WebSocketManager {
 
   private handleBufferedMessages(messages: BitfinexMessage[]): void {
     const start = performance.now();
+    const subs = this.subscriptionManager.getSubscriptions();
+
+    const tickerUpdates = new Map<string, Ticker>();
+    const tradeUpdates = new Map<string, Map<number, Trade>>();
+    const candleUpdates = new Map<string, Map<number, Candle>>();
+    const bookUpdates = new Map<string, Map<number, Order>>();
+
     messages.forEach((message) => {
-      this.handleUpdate(message);
+      switch (message.type) {
+        case 'ticker-update': {
+          const meta = subs.get(message.chanId);
+          if (!meta?.symbol) return;
+          const pair = fromSymbol(meta.symbol);
+          const [
+            bid,
+            bidSize,
+            ask,
+            askSize,
+            dailyChange,
+            dailyChangeRelative,
+            lastPrice,
+            volume,
+            high,
+            low,
+          ] = message.data;
+          tickerUpdates.set(pair, {
+            currencyPair: pair,
+            bid,
+            bidSize,
+            ask,
+            askSize,
+            dailyChange,
+            dailyChangeRelative,
+            lastPrice,
+            volume,
+            high,
+            low,
+          });
+          return;
+        }
+
+        case 'trade-update': {
+          const meta = subs.get(message.chanId);
+          if (!meta?.symbol) return;
+          const pair = fromSymbol(meta.symbol);
+          const [id, timestamp, amount, price] = message.data;
+          if (!tradeUpdates.has(pair)) {
+            tradeUpdates.set(pair, new Map());
+          }
+          tradeUpdates.get(pair)!.set(id, { id, timestamp, amount, price });
+          return;
+        }
+
+        case 'candle-update': {
+          const meta = subs.get(message.chanId);
+          if (!meta?.key) return;
+          const [timestamp, open, close, high, low, volume] = message.data;
+          if (!candleUpdates.has(meta.key)) {
+            candleUpdates.set(meta.key, new Map());
+          }
+          candleUpdates.get(meta.key)!.set(timestamp, {
+            timestamp,
+            open,
+            close,
+            high,
+            low,
+            volume,
+          });
+          return;
+        }
+
+        case 'book-update': {
+          const meta = subs.get(message.chanId);
+          if (!meta?.symbol) return;
+          const pair = fromSymbol(meta.symbol);
+          const [id, price, amount] = message.data;
+          if (!bookUpdates.has(pair)) {
+            bookUpdates.set(pair, new Map());
+          }
+          bookUpdates.get(pair)!.set(id, { id, price, amount });
+          return;
+        }
+      }
     });
+
+    if (tickerUpdates.size > 0) {
+      const current = this.store.get(this.atoms.tickers);
+      const updated = new Map(current);
+      tickerUpdates.forEach((ticker, pair) => {
+        updated.set(pair, ticker);
+      });
+      this.store.set(this.atoms.tickers, updated);
+    }
+
+    if (tradeUpdates.size > 0) {
+      const current = this.store.get(this.atoms.trades);
+      const updated = new Map(current);
+      tradeUpdates.forEach((newTrades, pair) => {
+        const existing = [...(current.get(pair) ?? [])];
+        newTrades.forEach((trade) => {
+          const index = existing.findIndex((t) => t.id === trade.id);
+          if (index >= 0) {
+            existing[index] = trade;
+          } else {
+            existing.unshift(trade);
+          }
+        });
+        if (existing.length > this.limits.trades) {
+          existing.length = this.limits.trades;
+        }
+        updated.set(pair, existing);
+      });
+      this.store.set(this.atoms.trades, updated);
+    }
+
+    if (candleUpdates.size > 0) {
+      const current = this.store.get(this.atoms.candles);
+      const updated = new Map(current);
+      candleUpdates.forEach((newCandles, key) => {
+        const existing = [...(current.get(key) ?? [])];
+        newCandles.forEach((candle) => {
+          const index = existing.findIndex(
+            (c) => c.timestamp === candle.timestamp
+          );
+          if (index >= 0) {
+            existing[index] = candle;
+          } else {
+            existing.push(candle);
+          }
+        });
+        existing.sort((a, b) => a.timestamp - b.timestamp);
+        if (existing.length > this.limits.candles) {
+          updated.set(key, existing.slice(-this.limits.candles));
+        } else {
+          updated.set(key, existing);
+        }
+      });
+      this.store.set(this.atoms.candles, updated);
+    }
+
+    if (bookUpdates.size > 0) {
+      const current = this.store.get(this.atoms.book);
+      const updated = new Map(current);
+      bookUpdates.forEach((coalescedOrders, pair) => {
+        const existing = current.get(pair) ?? { bids: [], asks: [] };
+        const bids = [...existing.bids];
+        const asks = [...existing.asks];
+
+        coalescedOrders.forEach((order) => {
+          const isBid = order.amount > 0;
+          const side = isBid ? bids : asks;
+
+          if (order.price === 0) {
+            const removeIndex = side.findIndex((o) => o.id === order.id);
+            if (removeIndex >= 0) {
+              side.splice(removeIndex, 1);
+            }
+            return;
+          }
+
+          const existingIndex = side.findIndex((o) => o.id === order.id);
+          if (existingIndex >= 0) {
+            side[existingIndex] = order;
+          } else {
+            side.push(order);
+          }
+        });
+
+        if (bids.length > this.limits.bookOrders) {
+          bids.length = this.limits.bookOrders;
+        }
+        if (asks.length > this.limits.bookOrders) {
+          asks.length = this.limits.bookOrders;
+        }
+
+        updated.set(pair, { bids, asks });
+      });
+      this.store.set(this.atoms.book, updated);
+    }
+
     const latency = performance.now() - start;
     performanceTracker.trackLatency('buffer-flush', latency);
   }
-
-  private handleUpdate(message: BitfinexMessage): void {
-    switch (message.type) {
-      case 'ticker-update': {
-        const meta = this.subscriptionManager
-          .getSubscriptions()
-          .get(message.chanId);
-        if (!meta?.symbol) return;
-
-        const currencyPair = fromSymbol(meta.symbol);
-        const [
-          bid,
-          bidSize,
-          ask,
-          askSize,
-          dailyChange,
-          dailyChangeRelative,
-          lastPrice,
-          volume,
-          high,
-          low,
-        ] = message.data;
-
-        const ticker: Ticker = {
-          currencyPair,
-          bid,
-          bidSize,
-          ask,
-          askSize,
-          dailyChange,
-          dailyChangeRelative,
-          lastPrice,
-          volume,
-          high,
-          low,
-        };
-
-        const current = this.store.get(this.atoms.tickers);
-        const updated = new Map(current);
-        updated.set(currencyPair, ticker);
-        this.store.set(this.atoms.tickers, updated);
-        return;
-      }
-
-      case 'trade-update': {
-        const meta = this.subscriptionManager
-          .getSubscriptions()
-          .get(message.chanId);
-        if (!meta?.symbol) return;
-
-        const currencyPair = fromSymbol(meta.symbol);
-        const [id, timestamp, amount, price] = message.data;
-        const trade: Trade = { id, timestamp, amount, price };
-
-        const current = this.store.get(this.atoms.trades);
-        const existing = current.get(currencyPair) ?? [];
-        const tradeIndex = existing.findIndex((t) => t.id === id);
-
-        let updatedTrades: Trade[];
-        if (tradeIndex >= 0) {
-          updatedTrades = [...existing];
-          updatedTrades[tradeIndex] = trade;
-        } else {
-          updatedTrades = [trade, ...existing].slice(0, this.limits.trades);
-        }
-
-        const updated = new Map(current);
-        updated.set(currencyPair, updatedTrades);
-        this.store.set(this.atoms.trades, updated);
-        return;
-      }
-
-      case 'candle-update': {
-        const meta = this.subscriptionManager
-          .getSubscriptions()
-          .get(message.chanId);
-        if (!meta?.key) return;
-
-        const [timestamp, open, close, high, low, volume] = message.data;
-        const candle: Candle = {
-          timestamp,
-          open,
-          close,
-          high,
-          low,
-          volume,
-        };
-
-        const current = this.store.get(this.atoms.candles);
-        const existing = current.get(meta.key) ?? [];
-        const candleIndex = existing.findIndex(
-          (c) => c.timestamp === timestamp
-        );
-
-        let updatedCandles: Candle[];
-        if (candleIndex >= 0) {
-          updatedCandles = [...existing];
-          updatedCandles[candleIndex] = candle;
-        } else {
-          updatedCandles = [...existing, candle]
-            .sort((a, b) => a.timestamp - b.timestamp)
-            .slice(-this.limits.candles);
-        }
-
-        const updated = new Map(current);
-        updated.set(meta.key, updatedCandles);
-        this.store.set(this.atoms.candles, updated);
-        return;
-      }
-
-      case 'book-update': {
-        const meta = this.subscriptionManager
-          .getSubscriptions()
-          .get(message.chanId);
-        if (!meta?.symbol) return;
-
-        const currencyPair = fromSymbol(meta.symbol);
-        const [id, price, amount] = message.data;
-
-        const current = this.store.get(this.atoms.book);
-        const existing = current.get(currencyPair) ?? {
-          bids: [],
-          asks: [],
-        };
-
-        const updatedBook = updateBookSide(
-          existing,
-          { id, price, amount },
-          this.limits.bookOrders
-        );
-
-        const updated = new Map(current);
-        updated.set(currencyPair, updatedBook);
-        this.store.set(this.atoms.book, updated);
-        return;
-      }
-    }
-  }
-}
-
-function updateBookSide(
-  book: BookSide,
-  order: Order,
-  maxOrders: number
-): BookSide {
-  const isBid = order.amount > 0;
-  const side = isBid ? book.bids : book.asks;
-  const otherSide = isBid ? book.asks : book.bids;
-
-  if (order.price === 0) {
-    const filtered = side.filter((o) => o.id !== order.id);
-    return isBid
-      ? { bids: filtered, asks: otherSide }
-      : { bids: otherSide, asks: filtered };
-  }
-
-  const existingIndex = side.findIndex((o) => o.id === order.id);
-
-  let updatedSide: Order[];
-  if (existingIndex >= 0) {
-    updatedSide = [...side];
-    updatedSide[existingIndex] = order;
-  } else {
-    updatedSide = [...side, order].slice(-maxOrders);
-  }
-
-  return isBid
-    ? { bids: updatedSide, asks: otherSide }
-    : { bids: otherSide, asks: updatedSide };
 }
