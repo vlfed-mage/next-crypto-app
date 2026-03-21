@@ -169,10 +169,12 @@ export default memo(function CandlesChart() {
                   fill={VOLUME_COLOR}
                   opacity={0.3}
                   barSize={6}
+                  isAnimationActive={false}
                 />
                 <Bar
                   yAxisId="price"
                   dataKey="body"
+                  isAnimationActive={false}
                   barSize={6}
                   shape={(props) => {
                     const x = Number(props.x);

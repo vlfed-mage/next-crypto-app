@@ -1,0 +1,4094 @@
+[
+  {
+    "timestamp": "2026-03-21T19:56:56.309Z",
+    "fps": 104,
+    "memoryMb": 44.84235858917236,
+    "health": "good",
+    "messagesPerMinute": 1660,
+    "channels": {
+      "ticker-update": 7,
+      "candle-update": 5,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 70,
+      "book-snapshot": 1,
+      "book-update": 48
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:56:57.308Z",
+    "fps": 115,
+    "memoryMb": 50.09757137298584,
+    "health": "good",
+    "messagesPerMinute": 2192,
+    "channels": {
+      "ticker-update": 7,
+      "candle-update": 9,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 72,
+      "book-snapshot": 1,
+      "book-update": 123
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:56:58.309Z",
+    "fps": 106,
+    "memoryMb": 48.38430595397949,
+    "health": "good",
+    "messagesPerMinute": 2153,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 9,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 74,
+      "book-snapshot": 1,
+      "book-update": 146
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:56:59.309Z",
+    "fps": 116,
+    "memoryMb": 63.96983814239502,
+    "health": "good",
+    "messagesPerMinute": 2087,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 9,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 74,
+      "book-snapshot": 1,
+      "book-update": 173
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:00.309Z",
+    "fps": 108,
+    "memoryMb": 71.78215503692627,
+    "health": "good",
+    "messagesPerMinute": 2048,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 14,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 74,
+      "book-snapshot": 1,
+      "book-update": 197
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:01.309Z",
+    "fps": 117,
+    "memoryMb": 35.447031021118164,
+    "health": "good",
+    "messagesPerMinute": 2179,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 14,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 243
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:02.309Z",
+    "fps": 116,
+    "memoryMb": 46.83686351776123,
+    "health": "good",
+    "messagesPerMinute": 2128,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 14,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 270
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:03.310Z",
+    "fps": 117,
+    "memoryMb": 37.42715835571289,
+    "health": "good",
+    "messagesPerMinute": 1971,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 14,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 274
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:04.309Z",
+    "fps": 109,
+    "memoryMb": 49.68669128417969,
+    "health": "good",
+    "messagesPerMinute": 1930,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 294
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:05.309Z",
+    "fps": 115,
+    "memoryMb": 53.22258949279785,
+    "health": "good",
+    "messagesPerMinute": 1913,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 322
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:06.310Z",
+    "fps": 117,
+    "memoryMb": 56.39256572723389,
+    "health": "good",
+    "messagesPerMinute": 1801,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 326
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:07.309Z",
+    "fps": 117,
+    "memoryMb": 46.33825206756592,
+    "health": "good",
+    "messagesPerMinute": 1715,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 333
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:08.309Z",
+    "fps": 118,
+    "memoryMb": 44.733567237854004,
+    "health": "good",
+    "messagesPerMinute": 1628,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 337
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:09.309Z",
+    "fps": 118,
+    "memoryMb": 36.27799415588379,
+    "health": "good",
+    "messagesPerMinute": 1548,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 340
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:10.310Z",
+    "fps": 118,
+    "memoryMb": 52.35260486602783,
+    "health": "good",
+    "messagesPerMinute": 1476,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 343
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:11.310Z",
+    "fps": 120,
+    "memoryMb": 46.886189460754395,
+    "health": "good",
+    "messagesPerMinute": 1414,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 347
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:12.309Z",
+    "fps": 116,
+    "memoryMb": 47.23075485229492,
+    "health": "good",
+    "messagesPerMinute": 1436,
+    "channels": {
+      "ticker-update": 14,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 378
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:13.309Z",
+    "fps": 119,
+    "memoryMb": 48.0764856338501,
+    "health": "good",
+    "messagesPerMinute": 1417,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 18,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 389
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:14.310Z",
+    "fps": 115,
+    "memoryMb": 53.39560794830322,
+    "health": "good",
+    "messagesPerMinute": 1407,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 407
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:15.309Z",
+    "fps": 116,
+    "memoryMb": 52.33375835418701,
+    "health": "good",
+    "messagesPerMinute": 1359,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 411
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:16.310Z",
+    "fps": 121,
+    "memoryMb": 44.34085178375244,
+    "health": "good",
+    "messagesPerMinute": 1309,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 413
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:17.309Z",
+    "fps": 116,
+    "memoryMb": 49.346235275268555,
+    "health": "good",
+    "messagesPerMinute": 1277,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 421
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:18.309Z",
+    "fps": 118,
+    "memoryMb": 47.32498264312744,
+    "health": "good",
+    "messagesPerMinute": 1250,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 430
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:19.309Z",
+    "fps": 118,
+    "memoryMb": 42.23141670227051,
+    "health": "good",
+    "messagesPerMinute": 1214,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 434
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:20.309Z",
+    "fps": 116,
+    "memoryMb": 42.770691871643066,
+    "health": "good",
+    "messagesPerMinute": 1180,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 438
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:21.309Z",
+    "fps": 116,
+    "memoryMb": 34.911444664001465,
+    "health": "good",
+    "messagesPerMinute": 1155,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 445
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:22.309Z",
+    "fps": 117,
+    "memoryMb": 35.503024101257324,
+    "health": "good",
+    "messagesPerMinute": 1133,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 453
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:23.310Z",
+    "fps": 112,
+    "memoryMb": 31.448604583740234,
+    "health": "good",
+    "messagesPerMinute": 1122,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 466
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:24.310Z",
+    "fps": 117,
+    "memoryMb": 33.5156831741333,
+    "health": "good",
+    "messagesPerMinute": 1116,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 481
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:25.309Z",
+    "fps": 116,
+    "memoryMb": 58.84719181060791,
+    "health": "good",
+    "messagesPerMinute": 1102,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 492
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:26.310Z",
+    "fps": 120,
+    "memoryMb": 47.17529296875,
+    "health": "good",
+    "messagesPerMinute": 1078,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 20,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 84,
+      "book-snapshot": 1,
+      "book-update": 496
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:27.309Z",
+    "fps": 119,
+    "memoryMb": 43.432538986206055,
+    "health": "good",
+    "messagesPerMinute": 1056,
+    "channels": {
+      "ticker-update": 20,
+      "candle-update": 22,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 86,
+      "book-snapshot": 1,
+      "book-update": 497
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:28.309Z",
+    "fps": 118,
+    "memoryMb": 38.626264572143555,
+    "health": "good",
+    "messagesPerMinute": 1047,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 22,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 86,
+      "book-snapshot": 1,
+      "book-update": 503
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:29.310Z",
+    "fps": 104,
+    "memoryMb": 40.51688289642334,
+    "health": "good",
+    "messagesPerMinute": 1032,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 24,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 86,
+      "book-snapshot": 1,
+      "book-update": 509
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:30.310Z",
+    "fps": 119,
+    "memoryMb": 65.13151454925537,
+    "health": "good",
+    "messagesPerMinute": 1015,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 24,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 86,
+      "book-snapshot": 1,
+      "book-update": 515
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:31.309Z",
+    "fps": 118,
+    "memoryMb": 31.728474617004395,
+    "health": "good",
+    "messagesPerMinute": 1000,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 24,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 88,
+      "book-snapshot": 1,
+      "book-update": 520
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:32.310Z",
+    "fps": 113,
+    "memoryMb": 34.88899803161621,
+    "health": "good",
+    "messagesPerMinute": 987,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 24,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 88,
+      "book-snapshot": 1,
+      "book-update": 528
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:33.310Z",
+    "fps": 105,
+    "memoryMb": 47.72706985473633,
+    "health": "good",
+    "messagesPerMinute": 982,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 537
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:34.310Z",
+    "fps": 120,
+    "memoryMb": 39.71165657043457,
+    "health": "good",
+    "messagesPerMinute": 965,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 541
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:35.310Z",
+    "fps": 118,
+    "memoryMb": 37.38076400756836,
+    "health": "good",
+    "messagesPerMinute": 949,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 545
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:36.310Z",
+    "fps": 116,
+    "memoryMb": 35.15235233306885,
+    "health": "good",
+    "messagesPerMinute": 936,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 551
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:37.309Z",
+    "fps": 120,
+    "memoryMb": 50.972710609436035,
+    "health": "good",
+    "messagesPerMinute": 915,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 551
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:38.309Z",
+    "fps": 119,
+    "memoryMb": 57.87785720825195,
+    "health": "good",
+    "messagesPerMinute": 896,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 551
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:39.311Z",
+    "fps": 121,
+    "memoryMb": 58.196163177490234,
+    "health": "good",
+    "messagesPerMinute": 877,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 551
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:40.309Z",
+    "fps": 119,
+    "memoryMb": 40.38543510437012,
+    "health": "good",
+    "messagesPerMinute": 862,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 553
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:41.313Z",
+    "fps": 119,
+    "memoryMb": 47.08329486846924,
+    "health": "good",
+    "messagesPerMinute": 853,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 560
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:42.309Z",
+    "fps": 119,
+    "memoryMb": 68.3395004272461,
+    "health": "good",
+    "messagesPerMinute": 850,
+    "channels": {
+      "ticker-update": 26,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 572
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:43.313Z",
+    "fps": 117,
+    "memoryMb": 62.28335666656494,
+    "health": "good",
+    "messagesPerMinute": 845,
+    "channels": {
+      "ticker-update": 30,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 578
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:44.309Z",
+    "fps": 120,
+    "memoryMb": 82.68284130096436,
+    "health": "good",
+    "messagesPerMinute": 831,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 578
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:45.309Z",
+    "fps": 120,
+    "memoryMb": 73.10607433319092,
+    "health": "good",
+    "messagesPerMinute": 815,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 578
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:46.309Z",
+    "fps": 119,
+    "memoryMb": 87.74448680877686,
+    "health": "good",
+    "messagesPerMinute": 803,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 580
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:47.309Z",
+    "fps": 117,
+    "memoryMb": 87.67296123504639,
+    "health": "good",
+    "messagesPerMinute": 795,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 586
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:48.311Z",
+    "fps": 118,
+    "memoryMb": 84.76780414581299,
+    "health": "good",
+    "messagesPerMinute": 789,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 594
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:49.309Z",
+    "fps": 117,
+    "memoryMb": 82.67362308502197,
+    "health": "good",
+    "messagesPerMinute": 782,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 90,
+      "book-snapshot": 1,
+      "book-update": 600
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:50.309Z",
+    "fps": 116,
+    "memoryMb": 83.82050800323486,
+    "health": "good",
+    "messagesPerMinute": 819,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 644
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:51.311Z",
+    "fps": 116,
+    "memoryMb": 49.833672523498535,
+    "health": "good",
+    "messagesPerMinute": 819,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 657
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:52.309Z",
+    "fps": 117,
+    "memoryMb": 49.40240669250488,
+    "health": "good",
+    "messagesPerMinute": 825,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 26,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 677
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:53.309Z",
+    "fps": 111,
+    "memoryMb": 32.458252906799316,
+    "health": "good",
+    "messagesPerMinute": 822,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 28,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 686
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:54.311Z",
+    "fps": 118,
+    "memoryMb": 53.72202110290527,
+    "health": "good",
+    "messagesPerMinute": 819,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 28,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 696
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:55.309Z",
+    "fps": 119,
+    "memoryMb": 48.50669860839844,
+    "health": "good",
+    "messagesPerMinute": 809,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 28,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 699
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:56.309Z",
+    "fps": 115,
+    "memoryMb": 52.81126308441162,
+    "health": "good",
+    "messagesPerMinute": 806,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 28,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 710
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:57.313Z",
+    "fps": 119,
+    "memoryMb": 59.0405855178833,
+    "health": "good",
+    "messagesPerMinute": 800,
+    "channels": {
+      "ticker-update": 31,
+      "candle-update": 28,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 716
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:58.309Z",
+    "fps": 119,
+    "memoryMb": 57.89409637451172,
+    "health": "good",
+    "messagesPerMinute": 806,
+    "channels": {
+      "ticker-update": 35,
+      "candle-update": 30,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 730
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:57:59.309Z",
+    "fps": 117,
+    "memoryMb": 61.135704040527344,
+    "health": "good",
+    "messagesPerMinute": 800,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 30,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 736
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:00.309Z",
+    "fps": 118,
+    "memoryMb": 58.668864250183105,
+    "health": "good",
+    "messagesPerMinute": 792,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 30,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 740
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:01.309Z",
+    "fps": 117,
+    "memoryMb": 58.743821144104004,
+    "health": "good",
+    "messagesPerMinute": 786,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 30,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 746
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:02.312Z",
+    "fps": 118,
+    "memoryMb": 55.76521873474121,
+    "health": "good",
+    "messagesPerMinute": 778,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 30,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 750
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:03.309Z",
+    "fps": 118,
+    "memoryMb": 40.373573303222656,
+    "health": "good",
+    "messagesPerMinute": 774,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 30,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 758
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:04.309Z",
+    "fps": 117,
+    "memoryMb": 54.68728256225586,
+    "health": "good",
+    "messagesPerMinute": 780,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 30,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 778
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:05.314Z",
+    "fps": 118,
+    "memoryMb": 39.74127006530762,
+    "health": "good",
+    "messagesPerMinute": 774,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 32,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 782
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:06.371Z",
+    "fps": 119,
+    "memoryMb": 39.76982307434082,
+    "health": "good",
+    "messagesPerMinute": 771,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 32,
+      "trades-snapshot": 1,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 791
+    },
+    "latencies": {
+      "trades-snapshot": 0.3999999761581421,
+      "buffer-flush": 0,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:07.309Z",
+    "fps": 103,
+    "memoryMb": 44.07210636138916,
+    "health": "good",
+    "messagesPerMinute": 769,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 32,
+      "trades-snapshot": 2,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 800
+    },
+    "latencies": {
+      "trades-snapshot": 0.20000004768371582,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:08.309Z",
+    "fps": 120,
+    "memoryMb": 44.42160129547119,
+    "health": "good",
+    "messagesPerMinute": 759,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 32,
+      "trades-snapshot": 2,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 800
+    },
+    "latencies": {
+      "trades-snapshot": 0.20000004768371582,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:09.309Z",
+    "fps": 120,
+    "memoryMb": 44.74006366729736,
+    "health": "good",
+    "messagesPerMinute": 749,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 32,
+      "trades-snapshot": 2,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 1,
+      "book-update": 800
+    },
+    "latencies": {
+      "trades-snapshot": 0.20000004768371582,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.19999992847442627
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:10.309Z",
+    "fps": 109,
+    "memoryMb": 68.98746299743652,
+    "health": "good",
+    "messagesPerMinute": 741,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 34,
+      "trades-snapshot": 2,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 2,
+      "book-update": 800
+    },
+    "latencies": {
+      "trades-snapshot": 0.20000004768371582,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:11.309Z",
+    "fps": 122,
+    "memoryMb": 53.13912296295166,
+    "health": "good",
+    "messagesPerMinute": 736,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 34,
+      "trades-snapshot": 2,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 2,
+      "book-update": 804
+    },
+    "latencies": {
+      "trades-snapshot": 0.20000004768371582,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:12.310Z",
+    "fps": 107,
+    "memoryMb": 54.480048179626465,
+    "health": "good",
+    "messagesPerMinute": 729,
+    "channels": {
+      "ticker-update": 36,
+      "candle-update": 34,
+      "trades-snapshot": 3,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 2,
+      "book-update": 806
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:13.309Z",
+    "fps": 109,
+    "memoryMb": 57.06475067138672,
+    "health": "good",
+    "messagesPerMinute": 724,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 34,
+      "trades-snapshot": 3,
+      "candles-snapshot": 7,
+      "trade-update": 96,
+      "book-snapshot": 3,
+      "book-update": 806
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:14.309Z",
+    "fps": 115,
+    "memoryMb": 74.384352684021,
+    "health": "good",
+    "messagesPerMinute": 716,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 34,
+      "trades-snapshot": 3,
+      "candles-snapshot": 8,
+      "trade-update": 96,
+      "book-snapshot": 3,
+      "book-update": 806
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.20000004768371582,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:15.309Z",
+    "fps": 120,
+    "memoryMb": 63.05977535247803,
+    "health": "good",
+    "messagesPerMinute": 708,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 34,
+      "trades-snapshot": 3,
+      "candles-snapshot": 8,
+      "trade-update": 96,
+      "book-snapshot": 3,
+      "book-update": 806
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.20000004768371582,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:16.309Z",
+    "fps": 111,
+    "memoryMb": 71.5304069519043,
+    "health": "good",
+    "messagesPerMinute": 701,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 34,
+      "trades-snapshot": 4,
+      "candles-snapshot": 9,
+      "trade-update": 96,
+      "book-snapshot": 3,
+      "book-update": 806
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:17.310Z",
+    "fps": 109,
+    "memoryMb": 70.0102186203003,
+    "health": "good",
+    "messagesPerMinute": 693,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 34,
+      "trades-snapshot": 4,
+      "candles-snapshot": 9,
+      "trade-update": 96,
+      "book-snapshot": 4,
+      "book-update": 806
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.10000002384185791
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:18.311Z",
+    "fps": 117,
+    "memoryMb": 54.32535648345947,
+    "health": "good",
+    "messagesPerMinute": 692,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 34,
+      "trades-snapshot": 4,
+      "candles-snapshot": 9,
+      "trade-update": 96,
+      "book-snapshot": 4,
+      "book-update": 816
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.10000002384185791
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:19.311Z",
+    "fps": 119,
+    "memoryMb": 46.60560703277588,
+    "health": "good",
+    "messagesPerMinute": 686,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 34,
+      "trades-snapshot": 4,
+      "candles-snapshot": 9,
+      "trade-update": 96,
+      "book-snapshot": 4,
+      "book-update": 818
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.10000002384185791
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:20.309Z",
+    "fps": 120,
+    "memoryMb": 54.49309253692627,
+    "health": "good",
+    "messagesPerMinute": 681,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 38,
+      "trades-snapshot": 4,
+      "candles-snapshot": 9,
+      "trade-update": 96,
+      "book-snapshot": 4,
+      "book-update": 818
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.10000002384185791
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:21.337Z",
+    "fps": 115,
+    "memoryMb": 43.664005279541016,
+    "health": "good",
+    "messagesPerMinute": 678,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 40,
+      "trades-snapshot": 4,
+      "candles-snapshot": 9,
+      "trade-update": 96,
+      "book-snapshot": 4,
+      "book-update": 824
+    },
+    "latencies": {
+      "trades-snapshot": 0,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.10000002384185791
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:22.310Z",
+    "fps": 104,
+    "memoryMb": 54.1930456161499,
+    "health": "good",
+    "messagesPerMinute": 678,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 40,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 4,
+      "book-update": 831
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.10000002384185791
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:23.310Z",
+    "fps": 120,
+    "memoryMb": 45.79092311859131,
+    "health": "good",
+    "messagesPerMinute": 671,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 40,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 4,
+      "book-update": 831
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.10000002384185791
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:24.310Z",
+    "fps": 99,
+    "memoryMb": 66.43926239013672,
+    "health": "good",
+    "messagesPerMinute": 679,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 847
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:25.310Z",
+    "fps": 120,
+    "memoryMb": 69.7279224395752,
+    "health": "good",
+    "messagesPerMinute": 678,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 858
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:26.312Z",
+    "fps": 118,
+    "memoryMb": 66.13606262207031,
+    "health": "good",
+    "messagesPerMinute": 676,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 866
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:27.309Z",
+    "fps": 118,
+    "memoryMb": 62.03554630279541,
+    "health": "good",
+    "messagesPerMinute": 673,
+    "channels": {
+      "ticker-update": 41,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 872
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:28.311Z",
+    "fps": 119,
+    "memoryMb": 83.42889308929443,
+    "health": "good",
+    "messagesPerMinute": 671,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 874
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:29.312Z",
+    "fps": 119,
+    "memoryMb": 79.18029117584229,
+    "health": "good",
+    "messagesPerMinute": 665,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 876
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:30.311Z",
+    "fps": 117,
+    "memoryMb": 94.49743461608887,
+    "health": "good",
+    "messagesPerMinute": 662,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 882
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:31.311Z",
+    "fps": 120,
+    "memoryMb": 35.79607009887695,
+    "health": "good",
+    "messagesPerMinute": 659,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 888
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:32.310Z",
+    "fps": 119,
+    "memoryMb": 60.33280658721924,
+    "health": "good",
+    "messagesPerMinute": 656,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 894
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:33.310Z",
+    "fps": 120,
+    "memoryMb": 71.40427112579346,
+    "health": "good",
+    "messagesPerMinute": 652,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 897
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:34.309Z",
+    "fps": 120,
+    "memoryMb": 60.29400634765625,
+    "health": "good",
+    "messagesPerMinute": 645,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 897
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:35.309Z",
+    "fps": 120,
+    "memoryMb": 70.05465698242188,
+    "health": "good",
+    "messagesPerMinute": 641,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 901
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:36.310Z",
+    "fps": 116,
+    "memoryMb": 71.905592918396,
+    "health": "good",
+    "messagesPerMinute": 638,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 905
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:37.310Z",
+    "fps": 120,
+    "memoryMb": 84.5879716873169,
+    "health": "good",
+    "messagesPerMinute": 632,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 905
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:38.310Z",
+    "fps": 120,
+    "memoryMb": 86.3527603149414,
+    "health": "good",
+    "messagesPerMinute": 626,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 905
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:39.310Z",
+    "fps": 119,
+    "memoryMb": 86.69040203094482,
+    "health": "good",
+    "messagesPerMinute": 620,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 905
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:40.310Z",
+    "fps": 120,
+    "memoryMb": 34.31367111206055,
+    "health": "good",
+    "messagesPerMinute": 614,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 905
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:41.311Z",
+    "fps": 120,
+    "memoryMb": 34.631141662597656,
+    "health": "good",
+    "messagesPerMinute": 609,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 905
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:42.310Z",
+    "fps": 120,
+    "memoryMb": 34.94944381713867,
+    "health": "good",
+    "messagesPerMinute": 603,
+    "channels": {
+      "ticker-update": 47,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 905
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:43.310Z",
+    "fps": 113,
+    "memoryMb": 40.82019901275635,
+    "health": "good",
+    "messagesPerMinute": 613,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 927
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:44.309Z",
+    "fps": 116,
+    "memoryMb": 36.15009307861328,
+    "health": "good",
+    "messagesPerMinute": 610,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 46,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 933
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:45.310Z",
+    "fps": 112,
+    "memoryMb": 38.83921241760254,
+    "health": "good",
+    "messagesPerMinute": 617,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 50,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 952
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:46.310Z",
+    "fps": 112,
+    "memoryMb": 44.07828712463379,
+    "health": "good",
+    "messagesPerMinute": 627,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 51,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 980
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:47.310Z",
+    "fps": 112,
+    "memoryMb": 50.94712543487549,
+    "health": "good",
+    "messagesPerMinute": 627,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 51,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 990
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:48.309Z",
+    "fps": 113,
+    "memoryMb": 53.87516117095947,
+    "health": "good",
+    "messagesPerMinute": 626,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 51,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 998
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:49.310Z",
+    "fps": 116,
+    "memoryMb": 57.13448238372803,
+    "health": "good",
+    "messagesPerMinute": 624,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 51,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 1006
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:50.310Z",
+    "fps": 116,
+    "memoryMb": 54.29150867462158,
+    "health": "good",
+    "messagesPerMinute": 622,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 51,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 1012
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:51.310Z",
+    "fps": 118,
+    "memoryMb": 45.227291107177734,
+    "health": "good",
+    "messagesPerMinute": 623,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 51,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 1024
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:52.310Z",
+    "fps": 115,
+    "memoryMb": 40.70019245147705,
+    "health": "good",
+    "messagesPerMinute": 622,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 53,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 1031
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:53.311Z",
+    "fps": 117,
+    "memoryMb": 36.740535736083984,
+    "health": "good",
+    "messagesPerMinute": 622,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 53,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 1041
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:54.310Z",
+    "fps": 113,
+    "memoryMb": 45.692219734191895,
+    "health": "good",
+    "messagesPerMinute": 621,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 53,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 1049
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:55.310Z",
+    "fps": 103,
+    "memoryMb": 37.28020000457764,
+    "health": "good",
+    "messagesPerMinute": 619,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 55,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 1053
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:56.310Z",
+    "fps": 118,
+    "memoryMb": 58.98716163635254,
+    "health": "good",
+    "messagesPerMinute": 618,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 55,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 98,
+      "book-snapshot": 5,
+      "book-update": 1061
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:57.310Z",
+    "fps": 114,
+    "memoryMb": 62.2252721786499,
+    "health": "good",
+    "messagesPerMinute": 648,
+    "channels": {
+      "ticker-update": 53,
+      "candle-update": 55,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 108,
+      "book-snapshot": 5,
+      "book-update": 1125
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:58.310Z",
+    "fps": 111,
+    "memoryMb": 45.53217315673828,
+    "health": "good",
+    "messagesPerMinute": 692,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 55,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 118,
+      "book-snapshot": 5,
+      "book-update": 1212
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:58:59.310Z",
+    "fps": 116,
+    "memoryMb": 67.79426765441895,
+    "health": "good",
+    "messagesPerMinute": 702,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 61,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1231
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.3999999761581421,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:00.310Z",
+    "fps": 109,
+    "memoryMb": 70.14000225067139,
+    "health": "good",
+    "messagesPerMinute": 706,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 61,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1251
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:01.310Z",
+    "fps": 116,
+    "memoryMb": 70.79203414916992,
+    "health": "good",
+    "messagesPerMinute": 702,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 61,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1255
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:02.310Z",
+    "fps": 120,
+    "memoryMb": 61.9674654006958,
+    "health": "good",
+    "messagesPerMinute": 697,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 61,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1255
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:03.310Z",
+    "fps": 112,
+    "memoryMb": 64.2865514755249,
+    "health": "good",
+    "messagesPerMinute": 700,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 61,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1273
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:04.310Z",
+    "fps": 112,
+    "memoryMb": 69.02032566070557,
+    "health": "good",
+    "messagesPerMinute": 701,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 61,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1287
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:05.311Z",
+    "fps": 118,
+    "memoryMb": 88.13255023956299,
+    "health": "good",
+    "messagesPerMinute": 697,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 61,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1291
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:06.311Z",
+    "fps": 118,
+    "memoryMb": 84.04473209381104,
+    "health": "good",
+    "messagesPerMinute": 694,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 61,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1295
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:07.310Z",
+    "fps": 116,
+    "memoryMb": 79.72307014465332,
+    "health": "good",
+    "messagesPerMinute": 691,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 61,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1299
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:08.310Z",
+    "fps": 117,
+    "memoryMb": 72.75240898132324,
+    "health": "good",
+    "messagesPerMinute": 690,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 63,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1307
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:09.310Z",
+    "fps": 118,
+    "memoryMb": 90.30010032653809,
+    "health": "good",
+    "messagesPerMinute": 686,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 63,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1309
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.5,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:10.311Z",
+    "fps": 117,
+    "memoryMb": 81.53794002532959,
+    "health": "good",
+    "messagesPerMinute": 684,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1315
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:11.311Z",
+    "fps": 117,
+    "memoryMb": 77.7230920791626,
+    "health": "good",
+    "messagesPerMinute": 682,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1321
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:12.311Z",
+    "fps": 119,
+    "memoryMb": 42.99907684326172,
+    "health": "good",
+    "messagesPerMinute": 679,
+    "channels": {
+      "ticker-update": 60,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1325
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:13.310Z",
+    "fps": 116,
+    "memoryMb": 39.937843322753906,
+    "health": "good",
+    "messagesPerMinute": 678,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1327
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:14.310Z",
+    "fps": 116,
+    "memoryMb": 38.519917488098145,
+    "health": "good",
+    "messagesPerMinute": 675,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1331
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:15.310Z",
+    "fps": 120,
+    "memoryMb": 54.14542865753174,
+    "health": "good",
+    "messagesPerMinute": 670,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1331
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:16.311Z",
+    "fps": 120,
+    "memoryMb": 42.986764907836914,
+    "health": "good",
+    "messagesPerMinute": 667,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1335
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:17.310Z",
+    "fps": 110,
+    "memoryMb": 40.451290130615234,
+    "health": "good",
+    "messagesPerMinute": 665,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1341
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:18.310Z",
+    "fps": 116,
+    "memoryMb": 40.34420108795166,
+    "health": "good",
+    "messagesPerMinute": 663,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1348
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:19.310Z",
+    "fps": 117,
+    "memoryMb": 43.71934509277344,
+    "health": "good",
+    "messagesPerMinute": 659,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1350
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:20.310Z",
+    "fps": 116,
+    "memoryMb": 42.77660274505615,
+    "health": "good",
+    "messagesPerMinute": 661,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1364
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:21.310Z",
+    "fps": 116,
+    "memoryMb": 48.96982288360596,
+    "health": "good",
+    "messagesPerMinute": 659,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1370
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.3999999761581421,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:22.310Z",
+    "fps": 120,
+    "memoryMb": 36.23489856719971,
+    "health": "good",
+    "messagesPerMinute": 654,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1370
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.3999999761581421,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:23.310Z",
+    "fps": 113,
+    "memoryMb": 54.170655250549316,
+    "health": "good",
+    "messagesPerMinute": 654,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1380
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:24.311Z",
+    "fps": 114,
+    "memoryMb": 52.6096887588501,
+    "health": "good",
+    "messagesPerMinute": 654,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 65,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1390
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:25.310Z",
+    "fps": 118,
+    "memoryMb": 42.21536636352539,
+    "health": "good",
+    "messagesPerMinute": 652,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 67,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1394
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:26.311Z",
+    "fps": 112,
+    "memoryMb": 48.406511306762695,
+    "health": "good",
+    "messagesPerMinute": 653,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 67,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1409
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:27.311Z",
+    "fps": 114,
+    "memoryMb": 49.76095676422119,
+    "health": "good",
+    "messagesPerMinute": 653,
+    "channels": {
+      "ticker-update": 66,
+      "candle-update": 69,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1417
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:28.311Z",
+    "fps": 117,
+    "memoryMb": 54.83112049102783,
+    "health": "good",
+    "messagesPerMinute": 652,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 69,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1421
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:29.311Z",
+    "fps": 118,
+    "memoryMb": 48.65035343170166,
+    "health": "good",
+    "messagesPerMinute": 650,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 69,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1427
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:30.311Z",
+    "fps": 115,
+    "memoryMb": 47.14707851409912,
+    "health": "good",
+    "messagesPerMinute": 648,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 69,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1431
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:31.310Z",
+    "fps": 117,
+    "memoryMb": 42.33793067932129,
+    "health": "good",
+    "messagesPerMinute": 646,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 69,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1437
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:32.310Z",
+    "fps": 115,
+    "memoryMb": 42.33414077758789,
+    "health": "good",
+    "messagesPerMinute": 646,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 69,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1447
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:33.311Z",
+    "fps": 114,
+    "memoryMb": 35.510830879211426,
+    "health": "good",
+    "messagesPerMinute": 643,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 69,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1451
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:34.310Z",
+    "fps": 119,
+    "memoryMb": 53.15633583068848,
+    "health": "good",
+    "messagesPerMinute": 640,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 69,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1453
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:35.311Z",
+    "fps": 115,
+    "memoryMb": 45.88120365142822,
+    "health": "good",
+    "messagesPerMinute": 642,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1467
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:36.311Z",
+    "fps": 115,
+    "memoryMb": 44.499454498291016,
+    "health": "good",
+    "messagesPerMinute": 642,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1477
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:37.310Z",
+    "fps": 119,
+    "memoryMb": 38.43112277984619,
+    "health": "good",
+    "messagesPerMinute": 638,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1477
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:38.311Z",
+    "fps": 120,
+    "memoryMb": 60.58674716949463,
+    "health": "good",
+    "messagesPerMinute": 634,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1477
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:39.310Z",
+    "fps": 118,
+    "memoryMb": 41.60522747039795,
+    "health": "good",
+    "messagesPerMinute": 637,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1495
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:40.311Z",
+    "fps": 118,
+    "memoryMb": 60.93538761138916,
+    "health": "good",
+    "messagesPerMinute": 634,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1499
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.09999990463256836,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:41.310Z",
+    "fps": 119,
+    "memoryMb": 57.52065372467041,
+    "health": "good",
+    "messagesPerMinute": 631,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 126,
+      "book-snapshot": 5,
+      "book-update": 1501
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:42.311Z",
+    "fps": 120,
+    "memoryMb": 47.77498435974121,
+    "health": "good",
+    "messagesPerMinute": 636,
+    "channels": {
+      "ticker-update": 71,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1520
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:43.311Z",
+    "fps": 118,
+    "memoryMb": 48.237860679626465,
+    "health": "good",
+    "messagesPerMinute": 639,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1533
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:44.319Z",
+    "fps": 119,
+    "memoryMb": 45.52296161651611,
+    "health": "good",
+    "messagesPerMinute": 638,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 71,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1539
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.19999992847442627,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:45.311Z",
+    "fps": 109,
+    "memoryMb": 45.985562324523926,
+    "health": "good",
+    "messagesPerMinute": 635,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1541
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:46.311Z",
+    "fps": 120,
+    "memoryMb": 43.761019706726074,
+    "health": "good",
+    "messagesPerMinute": 635,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1549
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:47.311Z",
+    "fps": 120,
+    "memoryMb": 36.838900566101074,
+    "health": "good",
+    "messagesPerMinute": 632,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1551
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:48.311Z",
+    "fps": 120,
+    "memoryMb": 44.41442012786865,
+    "health": "good",
+    "messagesPerMinute": 628,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1551
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:49.311Z",
+    "fps": 119,
+    "memoryMb": 37.34248447418213,
+    "health": "good",
+    "messagesPerMinute": 625,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1553
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:50.311Z",
+    "fps": 120,
+    "memoryMb": 49.743587493896484,
+    "health": "good",
+    "messagesPerMinute": 622,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1553
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:51.311Z",
+    "fps": 119,
+    "memoryMb": 38.14569091796875,
+    "health": "good",
+    "messagesPerMinute": 620,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1557
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:52.311Z",
+    "fps": 120,
+    "memoryMb": 52.592345237731934,
+    "health": "good",
+    "messagesPerMinute": 616,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1557
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:53.311Z",
+    "fps": 120,
+    "memoryMb": 45.38674831390381,
+    "health": "good",
+    "messagesPerMinute": 613,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1557
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:54.311Z",
+    "fps": 120,
+    "memoryMb": 45.6975736618042,
+    "health": "good",
+    "messagesPerMinute": 609,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1557
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:55.311Z",
+    "fps": 120,
+    "memoryMb": 46.00878047943115,
+    "health": "good",
+    "messagesPerMinute": 606,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1557
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.2999999523162842,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:56.312Z",
+    "fps": 118,
+    "memoryMb": 54.57368278503418,
+    "health": "good",
+    "messagesPerMinute": 604,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1561
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:57.311Z",
+    "fps": 117,
+    "memoryMb": 49.362046241760254,
+    "health": "good",
+    "messagesPerMinute": 602,
+    "channels": {
+      "ticker-update": 77,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1565
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.20000004768371582,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:58.311Z",
+    "fps": 120,
+    "memoryMb": 44.49607753753662,
+    "health": "good",
+    "messagesPerMinute": 600,
+    "channels": {
+      "ticker-update": 79,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1565
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T19:59:59.311Z",
+    "fps": 120,
+    "memoryMb": 44.80617809295654,
+    "health": "good",
+    "messagesPerMinute": 596,
+    "channels": {
+      "ticker-update": 79,
+      "candle-update": 73,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1565
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.10000002384185791,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T20:00:00.310Z",
+    "fps": 120,
+    "memoryMb": 45.361374855041504,
+    "health": "good",
+    "messagesPerMinute": 594,
+    "channels": {
+      "ticker-update": 79,
+      "candle-update": 75,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1565
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.3999999761581421,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  },
+  {
+    "timestamp": "2026-03-21T20:00:01.311Z",
+    "fps": 120,
+    "memoryMb": 45.89416027069092,
+    "health": "good",
+    "messagesPerMinute": 591,
+    "channels": {
+      "ticker-update": 79,
+      "candle-update": 75,
+      "trades-snapshot": 5,
+      "candles-snapshot": 10,
+      "trade-update": 132,
+      "book-snapshot": 5,
+      "book-update": 1565
+    },
+    "latencies": {
+      "trades-snapshot": 0.10000002384185791,
+      "buffer-flush": 0.3999999761581421,
+      "candles-snapshot": 0.10000002384185791,
+      "book-snapshot": 0.20000004768371582
+    }
+  }
+]

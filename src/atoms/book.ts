@@ -22,20 +22,15 @@ export const selectedPairBookAtom = atom((get) => {
 export const processedBookAtom = atom((get) => {
   const { bids, asks } = get(selectedPairBookAtom);
 
-  const sortedBids = [...bids]
-    .sort((a, b) => b.price - a.price)
-    .filter((order) => order.price > 0);
-
-  const sortedAsks = [...asks]
-    .sort((a, b) => a.price - b.price)
-    .filter((order) => order.price > 0);
+  const validBids = bids.filter((order) => order.price > 0);
+  const validAsks = asks.filter((order) => order.price > 0);
 
   const paired: { bid: Order; ask: Order }[] = [];
-  const maxLength = Math.max(sortedBids.length, sortedAsks.length);
+  const maxLength = Math.max(validBids.length, validAsks.length);
 
   for (let i = 0; i < maxLength; i++) {
-    const bid = sortedBids[i];
-    const ask = sortedAsks[i];
+    const bid = validBids[i];
+    const ask = validAsks[i];
     if (bid && ask) {
       paired.push({ bid, ask });
     }
@@ -47,22 +42,17 @@ export const processedBookAtom = atom((get) => {
 export const depthAtom = atom((get) => {
   const { bids, asks } = get(selectedPairBookAtom);
 
-  const sortedBids = [...bids]
-    .sort((a, b) => b.price - a.price)
-    .filter((order) => order.price > 0);
-
-  const sortedAsks = [...asks]
-    .sort((a, b) => a.price - b.price)
-    .filter((order) => order.price > 0);
+  const topBids = bids.filter((o) => o.price > 0).slice(0, 15);
+  const topAsks = asks.filter((o) => o.price > 0).slice(0, 15);
 
   let bidDepth = 0;
-  const bidDepthData = sortedBids.slice(0, 15).map((order) => {
+  const bidDepthData = topBids.map((order) => {
     bidDepth += Math.abs(order.amount);
     return { price: order.price, depth: bidDepth };
   });
 
   let askDepth = 0;
-  const askDepthData = sortedAsks.slice(0, 15).map((order) => {
+  const askDepthData = topAsks.map((order) => {
     askDepth += Math.abs(order.amount);
     return { price: order.price, depth: askDepth };
   });

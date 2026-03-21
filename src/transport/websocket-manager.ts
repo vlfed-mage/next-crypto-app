@@ -9,6 +9,7 @@ import type { Ticker } from '@/types/ticker';
 import type { Trade } from '@/types/trade';
 import type { WritableAtom } from 'jotai';
 
+import { binarySearchIndex, sortedInsert } from '@/lib/binary-search';
 import { BITFINEX_WS_URL } from '@/lib/constants';
 import { fromSymbol } from '@/lib/currency-pair';
 import { performanceTracker } from '@/lib/performance-tracker';
@@ -227,6 +228,9 @@ export class WebSocketManager {
           }
         });
 
+        bids.sort((a, b) => b.price - a.price);
+        asks.sort((a, b) => a.price - b.price);
+
         const current = this.store.get(this.atoms.book);
         const updated = new Map(current);
         updated.set(currencyPair, {
@@ -359,19 +363,22 @@ export class WebSocketManager {
     if (candleUpdates.size > 0) {
       const current = this.store.get(this.atoms.candles);
       const updated = new Map(current);
+      const getTimestamp = (c: Candle) => c.timestamp;
+
       candleUpdates.forEach((newCandles, key) => {
         const existing = [...(current.get(key) ?? [])];
         newCandles.forEach((candle) => {
-          const index = existing.findIndex(
-            (c) => c.timestamp === candle.timestamp
+          const index = binarySearchIndex(
+            existing,
+            candle.timestamp,
+            getTimestamp
           );
           if (index >= 0) {
             existing[index] = candle;
           } else {
-            existing.push(candle);
+            sortedInsert(existing, candle, candle.timestamp, getTimestamp);
           }
         });
-        existing.sort((a, b) => a.timestamp - b.timestamp);
         if (existing.length > this.limits.candles) {
           updated.set(key, existing.slice(-this.limits.candles));
         } else {
@@ -384,6 +391,9 @@ export class WebSocketManager {
     if (bookUpdates.size > 0) {
       const current = this.store.get(this.atoms.book);
       const updated = new Map(current);
+      const bidPrice = (o: Order) => -o.price;
+      const askPrice = (o: Order) => o.price;
+
       bookUpdates.forEach((coalescedOrders, pair) => {
         const existing = current.get(pair) ?? { bids: [], asks: [] };
         const bids = [...existing.bids];
@@ -392,6 +402,7 @@ export class WebSocketManager {
         coalescedOrders.forEach((order) => {
           const isBid = order.amount > 0;
           const side = isBid ? bids : asks;
+          const getKey = isBid ? bidPrice : askPrice;
 
           if (order.price === 0) {
             const removeIndex = side.findIndex((o) => o.id === order.id);
@@ -405,7 +416,7 @@ export class WebSocketManager {
           if (existingIndex >= 0) {
             side[existingIndex] = order;
           } else {
-            side.push(order);
+            sortedInsert(side, order, getKey(order), getKey);
           }
         });
 

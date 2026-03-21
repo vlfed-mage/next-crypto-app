@@ -27,8 +27,8 @@ function mapToRecord(map: Map<string, number>): Record<string, number> {
 }
 
 export default function PerformanceDashboard() {
-  const [isOpen, setIsOpen] = useState(true);
-  const [isLogging, setIsLogging] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isLogging, setIsLogging] = useState(false);
   const [entryCount, setEntryCount] = useState(0);
   const metrics = usePerformanceMetrics();
   const connectionStatus = useConnectionStatus();
