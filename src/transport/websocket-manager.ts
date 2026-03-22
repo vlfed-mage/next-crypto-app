@@ -343,19 +343,17 @@ export class WebSocketManager {
       const current = this.store.get(this.atoms.trades);
       const updated = new Map(current);
       tradeUpdates.forEach((newTrades, pair) => {
-        const existing = [...(current.get(pair) ?? [])];
-        newTrades.forEach((trade) => {
-          const index = existing.findIndex((t) => t.id === trade.id);
-          if (index >= 0) {
-            existing[index] = trade;
-          } else {
-            existing.unshift(trade);
-          }
-        });
-        if (existing.length > this.limits.trades) {
-          existing.length = this.limits.trades;
+        const existing = current.get(pair) ?? [];
+        const uniqueNew = Array.from(newTrades.values());
+        const newIds = new Set(uniqueNew.map((t) => t.id));
+        const merged = [
+          ...uniqueNew,
+          ...existing.filter((t) => !newIds.has(t.id)),
+        ];
+        if (merged.length > this.limits.trades) {
+          merged.length = this.limits.trades;
         }
-        updated.set(pair, existing);
+        updated.set(pair, merged);
       });
       this.store.set(this.atoms.trades, updated);
     }
