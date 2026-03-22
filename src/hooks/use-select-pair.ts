@@ -11,6 +11,7 @@ import { ChannelType } from '@/types/channel';
 
 export function useSelectPair() {
   const setSelectedPair = useSetAtom(selectedPairAtom);
+  const setTimeframe = useSetAtom(selectedTimeframeAtom);
   const manager = useAtomValue(websocketManagerAtom);
   const timeframe = useAtomValue(selectedTimeframeAtom);
 
@@ -21,12 +22,17 @@ export function useSelectPair() {
       }
 
       const subscriptionManager = manager.getSubscriptionManager();
-      const currentSymbol = toSymbol(currencyPair);
 
       subscriptionManager.unsubscribeByChannel(ChannelType.TRADES);
       subscriptionManager.unsubscribeByChannel(ChannelType.BOOK);
 
+      if (timeframe !== DEFAULT_TIMEFRAME) {
+        setTimeframe(DEFAULT_TIMEFRAME);
+      }
+
       setSelectedPair(currencyPair);
+
+      const currentSymbol = toSymbol(currencyPair);
 
       subscriptionManager.subscribe({
         event: 'subscribe',
@@ -40,16 +46,8 @@ export function useSelectPair() {
         symbol: currentSymbol,
         prec: 'R0',
       });
-
-      if (timeframe !== DEFAULT_TIMEFRAME) {
-        subscriptionManager.subscribe({
-          event: 'subscribe',
-          channel: ChannelType.CANDLES,
-          key: `trade:${timeframe}:${currentSymbol}`,
-        });
-      }
     },
-    [manager, setSelectedPair, timeframe]
+    [manager, setSelectedPair, setTimeframe, timeframe]
   );
 
   return selectPair;

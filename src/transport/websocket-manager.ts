@@ -137,10 +137,8 @@ export class WebSocketManager {
         this.subscriptionManager.markDataReceived(message.chanId);
         const start = performance.now();
         this.handleSnapshot(message);
-        performanceTracker.trackLatency(
-          message.type,
-          performance.now() - start
-        );
+        const processingMs = performance.now() - start;
+        performanceTracker.trackLatency(message.type, processingMs);
         performanceTracker.trackMessage(message.type);
         return;
       }

@@ -59,20 +59,20 @@ export default function Dashboard() {
 
       store.set(selectedPairAtom, defaultPair);
 
+      subscriptionManager.subscribe({
+        event: 'subscribe',
+        channel: ChannelType.TRADES,
+        symbol: toSymbol(defaultPair),
+      });
+
+      subscriptionManager.subscribe({
+        event: 'subscribe',
+        channel: ChannelType.BOOK,
+        symbol: toSymbol(defaultPair),
+        prec: 'R0',
+      });
+
       setTimeout(() => {
-        subscriptionManager.subscribe({
-          event: 'subscribe',
-          channel: ChannelType.TRADES,
-          symbol: toSymbol(defaultPair),
-        });
-
-        subscriptionManager.subscribe({
-          event: 'subscribe',
-          channel: ChannelType.BOOK,
-          symbol: toSymbol(defaultPair),
-          prec: 'R0',
-        });
-
         pairs.forEach((pair) => {
           subscriptionManager.subscribe({
             event: 'subscribe',
