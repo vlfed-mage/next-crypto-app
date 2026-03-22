@@ -1,24 +1,23 @@
 import type { BitfinexMessage } from './types';
 
-import { MESSAGE_BUFFER_FLUSH_MS } from '@/lib/constants';
-
 type FlushCallback = (messages: BitfinexMessage[]) => void;
 
 export class MessageBuffer {
   private buffer: BitfinexMessage[] = [];
-  private timerId: ReturnType<typeof setInterval> | null = null;
+  private frameId: number | null = null;
+  private onFlush: FlushCallback | null = null;
 
   start(onFlush: FlushCallback): void {
-    this.timerId = setInterval(() => {
-      this.flush(onFlush);
-    }, MESSAGE_BUFFER_FLUSH_MS);
+    this.onFlush = onFlush;
+    this.scheduleFlush();
   }
 
   stop(): void {
-    if (this.timerId) {
-      clearInterval(this.timerId);
-      this.timerId = null;
+    if (this.frameId !== null) {
+      cancelAnimationFrame(this.frameId);
+      this.frameId = null;
     }
+    this.onFlush = null;
     this.buffer = [];
   }
 
@@ -26,13 +25,20 @@ export class MessageBuffer {
     this.buffer.push(message);
   }
 
-  private flush(onFlush: FlushCallback): void {
-    if (this.buffer.length === 0) {
+  private scheduleFlush(): void {
+    this.frameId = requestAnimationFrame(() => {
+      this.flush();
+      this.scheduleFlush();
+    });
+  }
+
+  private flush(): void {
+    if (this.buffer.length === 0 || !this.onFlush) {
       return;
     }
 
     const messages = this.buffer;
     this.buffer = [];
-    onFlush(messages);
+    this.onFlush(messages);
   }
 }

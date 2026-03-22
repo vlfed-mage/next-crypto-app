@@ -4,6 +4,7 @@ class PerformanceTracker {
   private messageCounts = new Map<string, number>();
   private latencies = new Map<string, number>();
   private totalMessages = 0;
+  private totalFlushes = 0;
   private windowStart = Date.now();
   private listeners: LatencyCallback[] = [];
 
@@ -24,6 +25,16 @@ class PerformanceTracker {
     };
   }
 
+  trackFlush(): void {
+    this.totalFlushes += 1;
+  }
+
+  getFlushesPerSecond(): number {
+    const elapsed = (Date.now() - this.windowStart) / 1000;
+    if (elapsed < 1) return 0;
+    return Math.round(this.totalFlushes / elapsed);
+  }
+
   getMessagesPerMinute(): number {
     const elapsed = (Date.now() - this.windowStart) / 1000;
     if (elapsed < 1) return 0;
@@ -41,6 +52,7 @@ class PerformanceTracker {
   reset(): void {
     this.messageCounts.clear();
     this.totalMessages = 0;
+    this.totalFlushes = 0;
     this.windowStart = Date.now();
   }
 }

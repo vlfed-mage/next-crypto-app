@@ -6,6 +6,7 @@ interface PerformanceMetrics {
   fps: number;
   memoryMb: number;
   messagesPerMinute: number;
+  flushesPerSecond: number;
   channelCounts: Map<string, number>;
   latencies: Map<string, number>;
 }
@@ -17,6 +18,7 @@ export function usePerformanceMetrics(): PerformanceMetrics {
     fps: 0,
     memoryMb: 0,
     messagesPerMinute: 0,
+    flushesPerSecond: 0,
     channelCounts: new Map(),
     latencies: new Map(),
   });
@@ -51,6 +53,7 @@ export function usePerformanceMetrics(): PerformanceMetrics {
         fps: currentFps,
         memoryMb,
         messagesPerMinute: performanceTracker.getMessagesPerMinute(),
+        flushesPerSecond: performanceTracker.getFlushesPerSecond(),
         channelCounts: performanceTracker.getChannelCounts(),
         latencies: performanceTracker.getLatencies(),
       });

@@ -53,6 +53,7 @@ export default function PerformanceDashboard() {
         memoryMb: currentMetrics.memoryMb,
         health: healthRef.current,
         messagesPerMinute: currentMetrics.messagesPerMinute,
+        flushesPerSecond: currentMetrics.flushesPerSecond,
         channels: mapToRecord(currentMetrics.channelCounts),
         latencies: mapToRecord(currentMetrics.latencies),
       });
@@ -94,6 +95,10 @@ export default function PerformanceDashboard() {
           <div className="flex justify-between">
             <span className="text-muted">Memory</span>
             <span className="font-mono">{metrics.memoryMb.toFixed(1)} MB</span>
+          </div>
+          <div className="flex justify-between">
+            <span className="text-muted">Flushes/sec</span>
+            <span className="font-mono">{metrics.flushesPerSecond}</span>
           </div>
           <div className="flex justify-between">
             <span className="text-muted">Health</span>

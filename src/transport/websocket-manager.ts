@@ -431,6 +431,7 @@ export class WebSocketManager {
     }
 
     const latency = performance.now() - start;
+    performanceTracker.trackFlush();
     performanceTracker.trackLatency('buffer-flush', latency);
   }
 }

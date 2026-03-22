@@ -4,6 +4,7 @@ interface PerformanceEntry {
   memoryMb: number;
   health: string;
   messagesPerMinute: number;
+  flushesPerSecond: number;
   channels: Record<string, number>;
   latencies: Record<string, number>;
 }
