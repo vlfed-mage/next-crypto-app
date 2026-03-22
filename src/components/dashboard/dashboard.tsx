@@ -60,6 +60,19 @@ export default function Dashboard() {
       store.set(selectedPairAtom, defaultPair);
 
       setTimeout(() => {
+        subscriptionManager.subscribe({
+          event: 'subscribe',
+          channel: ChannelType.TRADES,
+          symbol: toSymbol(defaultPair),
+        });
+
+        subscriptionManager.subscribe({
+          event: 'subscribe',
+          channel: ChannelType.BOOK,
+          symbol: toSymbol(defaultPair),
+          prec: 'R0',
+        });
+
         pairs.forEach((pair) => {
           subscriptionManager.subscribe({
             event: 'subscribe',
@@ -73,24 +86,12 @@ export default function Dashboard() {
             key: `trade:${DEFAULT_TIMEFRAME}:${toSymbol(pair)}`,
           });
         });
-
-        subscriptionManager.subscribe({
-          event: 'subscribe',
-          channel: ChannelType.TRADES,
-          symbol: toSymbol(defaultPair),
-        });
-
-        subscriptionManager.subscribe({
-          event: 'subscribe',
-          channel: ChannelType.BOOK,
-          symbol: toSymbol(defaultPair),
-          prec: 'R0',
-        });
       }, SUBSCRIPTION_DELAY_MS);
     });
 
     return () => {
       manager.disconnect();
+      initializedRef.current = false;
     };
   }, [store, initializeWebSocket]);
 

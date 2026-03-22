@@ -14,12 +14,7 @@ export const websocketManagerAtom = atom<WebSocketManager | null>(null);
 
 export const initializeWebSocketAtom = atom(
   null,
-  (get, set, store: ConstructorParameters<typeof WebSocketManager>[0]) => {
-    const existing = get(websocketManagerAtom);
-    if (existing) {
-      return existing;
-    }
-
+  (_get, set, store: ConstructorParameters<typeof WebSocketManager>[0]) => {
     const manager = new WebSocketManager(
       store,
       {

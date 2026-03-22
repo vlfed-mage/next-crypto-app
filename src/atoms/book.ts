@@ -42,8 +42,8 @@ export const processedBookAtom = atom((get) => {
 export const depthAtom = atom((get) => {
   const { bids, asks } = get(selectedPairBookAtom);
 
-  const topBids = bids.filter((o) => o.price > 0).slice(0, 15);
-  const topAsks = asks.filter((o) => o.price > 0).slice(0, 15);
+  const topBids = bids.filter((o) => o.price > 0);
+  const topAsks = asks.filter((o) => o.price > 0);
 
   let bidDepth = 0;
   const bidDepthData = topBids.map((order) => {
