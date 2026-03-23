@@ -9,7 +9,7 @@ import type { Ticker } from '@/types/ticker';
 import type { Trade } from '@/types/trade';
 import type { WritableAtom } from 'jotai';
 
-import { binarySearchIndex, sortedInsert } from '@/lib/binary-search';
+import { sortedInsert } from '@/lib/binary-search';
 import { BITFINEX_WS_URL } from '@/lib/constants';
 import { fromSymbol } from '@/lib/currency-pair';
 import { performanceTracker } from '@/lib/performance-tracker';
@@ -359,20 +359,18 @@ export class WebSocketManager {
     if (candleUpdates.size > 0) {
       const current = this.store.get(this.atoms.candles);
       const updated = new Map(current);
-      const getTimestamp = (c: Candle) => c.timestamp;
 
       candleUpdates.forEach((newCandles, key) => {
         const existing = [...(current.get(key) ?? [])];
-        newCandles.forEach((candle) => {
-          const index = binarySearchIndex(
-            existing,
-            candle.timestamp,
-            getTimestamp
-          );
-          if (index >= 0) {
-            existing[index] = candle;
-          } else {
-            sortedInsert(existing, candle, candle.timestamp, getTimestamp);
+        const sorted = Array.from(newCandles.values()).sort(
+          (a, b) => a.timestamp - b.timestamp
+        );
+        sorted.forEach((candle) => {
+          const last = existing[existing.length - 1];
+          if (last && last.timestamp === candle.timestamp) {
+            existing[existing.length - 1] = candle;
+          } else if (!last || candle.timestamp > last.timestamp) {
+            existing.push(candle);
           }
         });
         if (existing.length > this.limits.candles) {
